@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html"><button id="btn1" class="btn">Stopwatch</button></a>
+<a href="timer.html"><button id="btn2" class="btn">Timer</button></a>
+<div class="tool" >
+    <div id="tools">
+    <span>HH</span><input type="number" placeholder="00:" id="hours" class="heading-format" min="0", max="23" step="1" />
+    <span>MM</span><input id="minutes" class="heading-format" type="number" placeholder="00:" min="0" max="59" step="1" />
+    <span> SS</span><input type="number" placeholder="00" id="seconds" class="heading-format" min="0" max="59" step="1" />
+    </div>
+    <div id="remainder">
+    <h1 id="heading3">00:</h1>
+    <h1 id="heading2">00:</h1>
+    <h1 id="heading">00</h1>
+    </div>
+</div>
+<div id="startstop">
+    <button id="tstart" >Start</button>
+    <button id="tstop" onclick="stop_t()">Stop</button>
+    </div>
+
+    <h2> Refresh the page to Restart Timer !</h2>
+    <audio  id="audio1" ></audio>
+<script src="script2.js"></script>
+</body>
+</html>

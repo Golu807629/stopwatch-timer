@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.btn{
+    width: 20%;
+    height: 6vh;
+    margin-top: 20vh;
+    margin-left: 19%;
+}
+/*stopwatch and timer tool*/
+.tool{
+    border: 2px groove red;
+    width: 60%;
+    height: 50vh;
+    margin: 5vh 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#heading, #heading2, #heading3, #heading-milli{
+   text-align: center;
+    color: white;
+    font-size: 40px;
+}
+input{
+    color: black;
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+#startstop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#tools{
+    width: 60%;
+    height: 50vh;
+    margin: 5vh 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 2px solid blue;
+}
+#remainder{
+    width: 60%;
+    height: 50vh;
+    margin: 5vh 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 2px solid green;
+    display: none;
+}
+span{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
+}
+h2{
+    text-align: center;
+    color: purple;
+    }
+
+@media only screen and (max-width: 768px){
+    body{
+        background-size:100% 100vh;
+
+    }
+    .tool{
+        border: none;
+    }
+    #heading, #heading2, #heading3, #heading-milli{
+        text-align: center;
+         color: white;
+         font-size: 20px;
+         width: 20%;
+     }
+     .heading-format{
+        text-align: center;
+         color: black;
+         font-size: 20px;
+         width: 25%;
+     }
+     #tools{
+        width: 100%;
+        height: 30vh;
+        margin: 2vh 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border: 2px solid blue;
+}
+h2{
+    text-align: center;
+    color: purple;
+    }
+}
